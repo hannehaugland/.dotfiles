@@ -2,16 +2,22 @@ echo "\n 🌊 🫐 🌿 Velkommen, Hanne! 🌿 🫐 🌊 \n"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Set starship config variable
 eval "$(starship init zsh)"
+export STARSHIP_CONFIG=$DOTFILES/starship.toml
 
-DOTFILES="$HOME/.dotfiles"
+# Path to your oh-my-zsh installation.
+export DOTFILES="$HOME/.dotfiles-macos"
+
+# Load path settings
+source $DOTFILES/.path
+# Load aliases
+source $DOTFILES/.alias
 
 # Docker 
 export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
 
-##############################################
 ############### P L U G I N S ################
-##############################################
 
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -19,18 +25,7 @@ export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
 # Syntax highlight 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-##############################################
-############### P L U G I N S ################
-##############################################
-
-# Github
-alias gst="git status"
-
-##############################################
-################# P A T H S ##################
-##############################################
 # python 3.12
-# The original version is saved in .zprofile.pysave
 export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 
 # yarn
