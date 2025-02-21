@@ -1,0 +1,29 @@
+[user]
+	email = hanne.haugland@bekk.no
+	name = Hanne Sofie Haugland
+	username = hannehaugland
+  	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEtaZBftK9iMvgMLDj6f6Y+KlaP5EfdqmpOe88NBcAWI
+[alias]
+	s = status
+	fixup = commit --amend --no-edit
+[core]
+	excludesfile = ~/.gitignore
+	editor = code --wait
+[color]
+	ui = true 
+[push]
+	autoSetupRemote = true 
+[merge]
+	tool = vscode
+[gpg]
+	program = gpg1
+	format = ssh
+[commit]
+	gpgsign = false
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
+

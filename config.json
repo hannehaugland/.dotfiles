@@ -1,0 +1,14 @@
+{
+  "symlinks": [
+    {
+      "label": "zsh config",
+      "src": "$DOTFILES/.zshrc",
+      "dest": "$HOME/.zshrc"
+    },
+    {
+      "label": "git config",
+      "src": "$DOTFILES/.gitconfig",
+      "dest": "$HOME/.gitconfig"
+    }
+  ]
+}
