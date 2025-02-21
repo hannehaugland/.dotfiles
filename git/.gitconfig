@@ -16,14 +16,11 @@
 [merge]
 	tool = vscode
 [gpg]
-	program = gpg1
 	format = ssh
 [commit]
 	gpgsign = false
-[gpg]
-  format = ssh
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
-[commit]
-  gpgsign = true
 
+[includeIf "gitdir:~/bekk/"]
+  path = ~/bekk/.gitconfig
