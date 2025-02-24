@@ -7,7 +7,7 @@ eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$DOTFILES/starship.toml
 
 # Path to your oh-my-zsh installation.
-export DOTFILES="$HOME/.dotfiles-macos"
+export DOTFILES="$HOME/.dotfiles"
 
 # Load path settings
 source $DOTFILES/.path
