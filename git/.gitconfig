@@ -2,7 +2,7 @@
 	email = hanne.haugland@bekk.no
 	name = Hanne Sofie Haugland
 	username = hannehaugland
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEtaZBftK9iMvgMLDj6f6Y+KlaP5EfdqmpOe88NBcAWI
+	signingkey = ssh-ed25519
 [alias]
 	s = status
 	fixup = commit --amend --no-edit
