@@ -2,7 +2,6 @@
 	email = hanne.haugland@bekk.no
 	name = Hanne Sofie Haugland
 	username = hannehaugland
-	signingkey = ssh-ed25519
 [alias]
 	s = status
 	fixup = commit --amend --no-edit
@@ -15,12 +14,6 @@
 	autoSetupRemote = true 
 [merge]
 	tool = vscode
-[gpg]
-	format = ssh
-[commit]
-	gpgsign = false
-[gpg "ssh"]
-  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [includeIf "gitdir:~/bekk/"]
   path = ~/bekk/.gitconfig
