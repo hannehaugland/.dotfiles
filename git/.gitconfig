@@ -4,7 +4,8 @@
 	username = hannehaugland
 [alias]
 	s = status
-	fixup = commit --amend --no-edit
+	cp = cherry-pick	
+	wip = add . && git commit -m "wip" --no-verify
 [core]
 	excludesfile = ~/.gitignore
 	editor = code --wait

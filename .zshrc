@@ -6,8 +6,7 @@ export DOTFILES=$HOME/.dotfiles
 
 HOMEBREW_PREFIX=$(brew --prefix)
 
-# Load custom path settings and aliases
-source $DOTFILES/.path
+# Load custom aliases
 source $DOTFILES/.alias
 
 ############### P L U G I N S ################
@@ -17,3 +16,6 @@ source $DOTFILES/.alias
 
 # Syntax highlighting
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# starship
+eval "$(starship init zsh)"

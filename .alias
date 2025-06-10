@@ -1,2 +1,8 @@
 alias reload="clear && source ~/.zshrc"
+alias gco="git checkout"
 alias gst="git status"
+alias ga="git add"
+alias gap="git add -p"
+alias gcm="git commit -m"
+alias gp="git push"
+alias gpu="git pull"
