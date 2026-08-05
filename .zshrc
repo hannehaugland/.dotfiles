@@ -2,20 +2,22 @@
 echo "\n 🌊 🌷 🫐 🌿 Velkommen, Hanne! 🌿 🫐 🌷 🌊 \n"
 
 # Path to dotfiles
-export DOTFILES=$HOME/.dotfiles
-
+export DOTFILES="$HOME/.dotfiles"
 HOMEBREW_PREFIX=$(brew --prefix)
 
 # Load custom aliases
-source $DOTFILES/.alias
+source "$DOTFILES/.alias"
 
-############### P L U G I N S ################
+###### P L U G I N S   &   P R O M T ######
 
 # autojump
-[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
-
-# Syntax highlighting
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f "$HOMEBREW_PREFIX/etc/profile.d/autojump.sh" ] && \
+  source "$HOMEBREW_PREFIX/etc/profile.d/autojump.sh"
 
 # starship
-eval "$(starship init zsh)"
+command -v starship >/dev/null && \
+  eval "$(starship init zsh)"
+
+# syntax highlighting — must load after other plugins/keybindings
+[ -f "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && \
+  source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
