@@ -4,12 +4,10 @@ tap 'homebrew/bundle'
 brew 'autojump'
 brew 'gh'
 brew 'git'
-brew 'node'
 brew 'nvm'
 brew 'yarn'
 brew 'python3'
-brew 'zsh-completions'
-brew 'zsh-autosuggestions'
+brew 'starship'
 brew 'zsh-syntax-highlighting'
 
 # Apps 
