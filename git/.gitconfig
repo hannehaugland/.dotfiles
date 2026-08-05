@@ -15,6 +15,3 @@
 	autoSetupRemote = true 
 [merge]
 	tool = vscode
-
-[includeIf "gitdir:~/bekk/"]
-  path = ~/bekk/.gitconfig
